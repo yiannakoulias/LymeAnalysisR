@@ -6,5 +6,7 @@ ld <- gsheet2tbl(url)
 
 #need to cast many of the variables to numeric
 
+ld$Likeability <- as.numeric(ld$Likeability)
+
 #SummaryStatistics
-average(ld$Likeability)
+mean(ld$Likeability)
